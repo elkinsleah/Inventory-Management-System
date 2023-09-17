@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E2EAFC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddProductController">
+    <children>
+        <SplitPane layoutX="10.0" layoutY="10.0" prefHeight="580.0" prefWidth="780.0">
+            <items>
+                <AnchorPane maxWidth="889.0" minHeight="0.0" minWidth="878.0" prefHeight="578.0" prefWidth="889.0" style="-fx-background-color: #EDF2FB;">
+                    <children>
+                        <Label layoutX="31.0" layoutY="28.0" text="Add Product">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <GridPane layoutX="40.0" layoutY="96.0" prefHeight="65.0" prefWidth="150.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="32.00309753417969" minHeight="10.0" prefHeight="29.996917724609375" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="35.003082275390625" minHeight="10.0" prefHeight="35.003082275390625" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="ID" />
+                                <Label text="Name" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin></Label>
+                                <TextField fx:id="addProductIdTxtField" maxWidth="175.0" minHeight="26.0" minWidth="175.0" prefHeight="26.0" prefWidth="175.0" GridPane.columnIndex="1">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin></TextField>
+                                <TextField fx:id="addProductNameTxtField" minHeight="26.0" minWidth="175.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin></TextField>
+                            </children>
+                        </GridPane>
+                        <GridPane layoutX="40.0" layoutY="180.0" prefHeight="109.0" prefWidth="386.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="76.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="99.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="64.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="147.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Inv">
+                                    <GridPane.margin>
+                                        <Insets top="10.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Price" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Max" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <TextField fx:id="addProductInvTxtField" maxWidth="82.0" minWidth="80.0" GridPane.columnIndex="1">
+                                    <GridPane.margin>
+                                        <Insets top="10.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <TextField fx:id="addProductPriceTxtField" maxWidth="82.0" minWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <Label text="Min" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" top="20.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <TextField fx:id="addProductMinTxtField" maxWidth="82.0" minWidth="80.0" prefHeight="26.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <TextField maxWidth="82.0" minWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets top="2300.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <TextField fx:id="addProductMaxTxtField" maxWidth="82.0" minWidth="82.0" prefWidth="82.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets top="20.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                            </children>
+                        </GridPane>
+                        <TableView fx:id="availablePartsTableAdd" layoutX="411.0" layoutY="54.0" prefHeight="200.0" prefWidth="440.0">
+                            <columns>
+                                <TableColumn fx:id="availablePartIdColumn" prefWidth="50.0" text="Part ID" />
+                                <TableColumn fx:id="availablePartNameColumn" prefWidth="150.0" text="Part Name" />
+                                <TableColumn fx:id="availablePartInventoryColumn" prefWidth="110.0" text="Inventory Level" />
+                                <TableColumn fx:id="availablePartPriceColumn" prefWidth="130.0" text="Price/Cost per Unit" />
+                            </columns>
+                        </TableView>
+                        <TableView fx:id="associatedPartsTable" layoutX="411.0" layoutY="296.0" prefHeight="200.0" prefWidth="440.0">
+                            <columns>
+                                <TableColumn fx:id="associatedPartIdColumn" prefWidth="50.0" text="Part ID" />
+                                <TableColumn fx:id="associatedPartNameColumn" prefWidth="150.0" text="Part Name" />
+                                <TableColumn fx:id="associatedPartInventoryColumn" prefWidth="110.0" text="Inventory Level" />
+                                <TableColumn fx:id="associatedPartPriceColumn" prefWidth="130.0" text="Price/Cost per Unit" />
+                            </columns>
+                        </TableView>
+                        <TextField fx:id="searchAvailablePartsTxtField" layoutX="656.0" layoutY="16.0" onAction="#onActionAvailablePartsSearch" prefHeight="26.0" prefWidth="197.0" promptText="Search by Part ID or Name" />
+                        <Button layoutX="774.0" layoutY="263.0" minWidth="70.0" mnemonicParsing="false" onAction="#onActionAddToAssociatedParts" text="Add" />
+                        <Button layoutX="694.0" layoutY="503.0" minWidth="70.0" mnemonicParsing="false" onAction="#onActionRemoveAssociatedPart" text="Remove Associated Part" />
+                        <ButtonBar layoutX="644.0" layoutY="529.0" prefHeight="40.0" prefWidth="200.0">
+                            <buttons>
+                                <Button minWidth="70.0" mnemonicParsing="false" onAction="#onActionAddProductSave" text="Save" />
+                                <Button layoutX="140.0" layoutY="17.0" minWidth="70.0" mnemonicParsing="false" onAction="#onActionAddProductCancel" text="Cancel" />
+                            </buttons>
+                            <padding>
+                                <Insets top="5.0" />
+                            </padding>
+                        </ButtonBar>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
